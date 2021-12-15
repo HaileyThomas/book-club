@@ -1,7 +1,9 @@
 const Sequelize = require('sequelize');
 
+// hides mysql username and password
 require('dotenv').config();
 
+// creates connection to database
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
