@@ -1,1 +1,10 @@
-// HTML AND HANDLEBARS FOR HOMEPAGE CONTENT WILL GO HERE
+// HOMEPAGE HTML
+<div class="column is-two-thirds">
+    <ol>
+        {{#each books as |book|}}
+        <li>
+            {{> book-info book }}
+        </li>
+        {{/each}}
+    </ol>
+</div>
