@@ -30,12 +30,12 @@ Comment.init(
         key: 'id',
       },
     },
-    // connect comment to post id
-    post_id: {
+    // connect comment to book id
+    book_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'post',
+        model: 'book',
         key: 'id',
       },
     },

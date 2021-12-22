@@ -2,12 +2,15 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-Books.init(
+class Book extends Model {}
+
+Book.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      unique: true,
+      primaryKey: true,
+      autoIncrement: true,
     },
     title: {
       type: DataTypes.STRING,
@@ -25,6 +28,13 @@ Books.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
   {
     // table configuration options
@@ -35,4 +45,4 @@ Books.init(
   }
 );
 
-module.exports = { Books };
+module.exports = Book;

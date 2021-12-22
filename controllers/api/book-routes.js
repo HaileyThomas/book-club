@@ -5,7 +5,14 @@ const withAuth = require('../../utils/auth');
 // get all Book
 router.get('/', (req, res) => {
   Book.findAll({
-    attributes: ['id', 'author', 'title', 'publication', 'description', 'created_at'],
+    attributes: [
+      'id',
+      'author',
+      'title',
+      'publication',
+      'description',
+      'created_at',
+    ],
     order: [['created_at', 'DESC']],
     include: [
       {
@@ -35,7 +42,14 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ['id', 'author', 'title', 'publication', 'description', 'created_at'],
+    attributes: [
+      'id',
+      'author',
+      'title',
+      'publication',
+      'description',
+      'created_at',
+    ],
     include: [
       {
         model: Comment,
@@ -65,7 +79,7 @@ router.get('/:id', (req, res) => {
 });
 
 // create a Book
-router.Book('/', withAuth, (req, res) => {
+router.post('/', withAuth, (req, res) => {
   Book.create({
     title: req.body.title,
     book_content: req.body.book_content,
