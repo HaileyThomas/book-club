@@ -1,0 +1,21 @@
+<!-- SINGLE BOOK -->
+<div class="card m-3">
+    <div class="card-header has-background-primary">
+        <div class="card-header-title">
+            <h1 class="has-text-white is-size-2">
+                {{title}}
+            </h1>
+        </div>
+        <div class="card-header-icon">
+            <span class="icon has-text-white is-size-2">
+                <ion-icon name="book-outline"></ion-icon>
+            </span>
+        </div>
+    </div>
+    <div class="card-content">
+        <p class="is-size-5">  </p>
+    </div>
+    <div class="card-footer is-justify-content-center m-3">
+        <a href="/book/{{id}}" class="card-footer-item">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
+</div>
