@@ -1,1 +1,37 @@
-// HTML AND HANDLEBARS FOR DASHBOARD CONTENT WILL GO HERE
+// HTML AND HANDLEBARS FOR DASHBOARD CONTENT WILL GO HERE<div class="column is-two-thirds">
+    <!-- IMAGE -->
+    <div class="has-text-centered">
+        <img src="/assets/lightimage.png" width="400" />
+    </div>
+    <!-- DASHBOARD -->
+    <div class="card m-3">
+        <div class="card-header has-background-primary">
+            <div class="card-header-title has-text-white">
+                <h1 class="is-size-3">
+                    {{user.username}}'s Comments
+                </h1>
+            </div>
+            <div class="card-header-icon has-text-white">
+                <span class="icon is-size-4">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- COMMENTS -->
+    {{#if comments.length}}
+        <section class="m-3">
+            <ol>
+                {{#each comments as |comment|}}
+                <li>
+                    {{> comments comment}}
+                    <div class="has-text-right m-3">
+                        <a href="/dashboard/edit/{{comment.id}}" class="edit-link">Edit comment</a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </section>
+    {{/if}}
+</div>
+<script src="/javascript/comment.js"></script>
