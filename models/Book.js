@@ -7,28 +7,32 @@ Books.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      unique: true
+      unique: true,
     },
     title: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     author: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     publication: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     description: {
       type: DataTypes.TEXT,
-      allowNull: false
-    }
+      allowNull: false,
+    },
+  },
+  {
+    // table configuration options
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'book',
   }
 );
-
-
-
 
 module.exports = { Books };
