@@ -1,4 +1,4 @@
-<h1 align="center">Interactive Full-Stack Project: Book Club ✋</h1>
+<h1 align="center">Interactive Full-Stack Project: Book Club</h1>
   
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/jpd61/e-commerce-backend" />
@@ -17,9 +17,7 @@
  <h4>🔍 Designed and coded by <a href="https://github.com/HaileyThomas">Hailey Thomas</a> | <a href="https://github.com/Hanstyl">Nathan Nelson</a> | <a href="https://github.com/alviszheng">Alvis Zheng</a> | <a href="https://github.com/JamesVelarde">James Velarde</a>
 
 
-
-[Placeholder text for pitch]
-
+Are you interested to find out the trending books? Do you want to exchange comment with other book fans? This app will help you to find some close-knit group of people that you can share your thoughts about the book you all love. Book club allow you to search by book, read the review and add you comment to the book. Sign up today!
 
 ✋ [GitHub Repository](https://github.com/HaileyThomas/book-club/)
 
@@ -28,6 +26,7 @@
 
 ## Table of Contents
 
+- [Data Model](#data-model)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Purpose](#purpose)
@@ -39,7 +38,11 @@
 - [Links](#links)
 - [Questions](#questions)
 
+## 💿 Data Model
 
+<h1 align="center">
+        <img src="public/assets/data.png" alt="Data Model" title="Data Model Image" width="600" height="300">
+</h1>
 
 ## 💾 Installation
 
@@ -68,12 +71,11 @@
 
 ## 📖 User Story
 
-  `AS AN avid reader in the midsts of a pandemic 
+`AS AN avid reader in the midsts of a pandemic 
 
 I WANT to be able to find new books to read and have a place to discuss them with others who have also read them.
 
-SO THAT i can expose myself to new books and different perspectives. 
-`
+SO THAT i can expose myself to new books and different perspectives.`
 
 ## ✋ Acceptance Criteria
 
