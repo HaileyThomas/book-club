@@ -87,7 +87,7 @@ router.get('/book/:id', (req, res) => {
         return;
       }
       const book = dbBookData.get({ plain: true });
-      res.render('single-post', { book, loggedIn: req.session.loggedIn });
+      res.render('single-book', { book, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
