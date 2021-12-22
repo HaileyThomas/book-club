@@ -1,1 +1,48 @@
-// HTML AND HANDLEBARS FOR SINGLE BOOK CONTENT HERE
+// HTML FOR SINGLE PAGE
+<div class="column is-two-thirds">
+    <!-- SINGLE BOOK POST -->
+    {{> book-info book }}
+    {{#if loggedIn}}
+    <!-- ADD COMMENT -->
+    <div class="content columns">
+        <div class="column is-three-fifths">
+            <div class="card m-3">
+                <div class="card-header has-background-primary">
+                    <div class="card-header-title">
+                        <h1 class="has-text-white is-size-3">
+                            Join The Discussion
+                        </h1>
+                    </div>
+                    <div class="card-header-icon">
+                        <span class="icon has-text-white is-size-2">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <form class="comment-form">
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea m-2" name="comment-body"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-primary is-fullwidth m-2" type="submit">Save Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- IMAGE -->
+        <div class="column p-2">
+            <img src="/assets/groupimage.png" />
+        </div>
+    </div>
+    {{/if}}
+    {{#if parent_id}}
+    {{> comments book.comments}}
+    {{else}}
+    {{> replies book.comments}}
+    {{/if}}
+</div>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
