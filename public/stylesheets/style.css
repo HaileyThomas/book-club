@@ -1,1 +1,16 @@
-/* CSS WILL GO HERE */
+.fancy {
+  font-family: 'Grenze', serif;
+}
+
+h1 {
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 85px;
+}
+
+.login {
+  height: 93%;
+}
+
+li {
+  list-style-type: none;
+}

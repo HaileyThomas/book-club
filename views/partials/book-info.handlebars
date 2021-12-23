@@ -1,1 +1,35 @@
-// HTML AND HANDLEBARS FOR BOOKS HERE
+<!-- SINGLE BOOK -->
+<div class="card m-3">
+    <div class="card-header has-background-primary">
+        <div class="card-header-title">
+            <h1 class="has-text-white is-size-2">
+                {{title}}
+            </h1>
+        </div>
+        <div class="card-header-icon">
+            <a href="/book/{{id}}">
+                <span class="icon has-text-white is-size-2">
+                    <ion-icon name="book-outline"></ion-icon>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="columns">
+            <div class="column">
+                <img src="/assets/worm.png" />
+            </div>
+            <div class="column is-three-quarters has-text-left">
+                <p class="is-size-5"><b>Author: </b></p> <p class="fancy is-size-3">{{author}}</p>
+                <br>
+                <p class="is-size-6"><b>Published: </b></p> <p class="fancy is-size-4">{{publication}}</p>
+            </div>
+        </div>
+        <div class="columns has-text-justified">
+        <p class="fancy is-size-4">{{description}}</p>
+        </div>
+    </div>
+    <div class="card-footer is-justify-content-center m-3">
+        <a href="/book/{{id}}" class="card-footer-item">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
+</div>
