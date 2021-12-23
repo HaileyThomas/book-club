@@ -22,14 +22,9 @@
     {{#if comments.length}}
         <section class="m-3">
             <ol>
-                {{#each comments as |comment|}}
                 <li>
-                    {{> comments comment}}
-                    <div class="has-text-right m-3">
-                        <a href="/dashboard/edit/{{comment.id}}" class="edit-link">Edit comment</a>
-                    </div>
+                    {{> mycomments comments}}
                 </li>
-                {{/each}}
             </ol>
         </section>
     {{/if}}
