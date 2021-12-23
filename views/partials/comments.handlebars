@@ -1,21 +1,14 @@
-<div class="content columns">
-    {{#each this}}
-    <div class="column comments">
-        <div class="card m-3">
-            <div class="card-content">
-                <div class="columns">
-                    <p class="is-size-4 has-text-primary fancy"><b>{{user.username}} </b></p>
-                    <p class="is-size-5 has-text-grey-light fancy m-1">posted on {{created_at}}</p>
-                </div>
-                <div class="columns has-text-justified">
-                    <p class="is-size-6">{{comment_text}}</p>
-                </div>
-                <div class="columns is-justify-content-right">
-                    <!-- BELOW -->
-                    <a href="/reply/{{comment.id}}" class="button is-primary">Reply</a>
-                </div>
-            </div>
+{{#each this}}
+<div class="card m-3">
+    <div class="card-content">
+        <div class="columns">
+            <p class="is-size-4 has-text-primary fancy"><b>{{user.username}} </b></p>
+            <p class="is-size-5 has-text-grey-light fancy m-1">posted on {{format_date created_at}}</p>
+        </div>
+        <div class="columns has-text-justified">
+            <p class="is-size-6">{{comment_text}}</p>
         </div>
     </div>
-    {{/each}}
 </div>
+{{/each}}
+

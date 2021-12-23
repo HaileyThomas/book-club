@@ -1,4 +1,3 @@
-
 <div class="column is-two-thirds">
     <!-- SINGLE BOOK POST -->
     {{> book-info book }}
@@ -37,11 +36,15 @@
         </div>
     </div>
     {{/if}}
-    {{#if parent_id}}
-    {{> comments book.comments}}
-    {{else}}
-    {{> replies book.comments}}
-    {{/if}}
+    <div class="columns">
+        <div class="column is-full">
+    <ol>
+        <li>
+            {{> comments book.comments}}
+        </li>
+    </ol>
+    </div>
+    </div>
 </div>
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

@@ -10,3 +10,7 @@ h1 {
 .login {
   height: 93%;
 }
+
+li {
+  list-style-type: none;
+}

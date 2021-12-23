@@ -9,7 +9,7 @@ const { User, Comment } = require('../models');
 // authorize
 const withAuth = require('../utils/auth');
 
-// GET ALL USER COMMENTS
+// GET USER COMMENTS
 router.get('/', withAuth, (req, res) => {
   Comment.findAll({
     where: {

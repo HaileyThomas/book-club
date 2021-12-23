@@ -52,5 +52,30 @@ router.delete('/:id', withAuth, (req, res) => {
     });
 });
 
+// EDIT A COMMENT
+router.put('/:id', withAuth, (req, res) => {
+  Comment.update(
+    {
+      comment_text: req.body.comment_text,
+    },
+    {
+      where: {
+        id: req.params.id,
+      },
+    }
+  )
+    .then((dbCommentData) => {
+      if (!dbCommentData) {
+        res.status(404).json({ message: 'No comment found with that id!' });
+        return;
+      }
+      res.json(dbCommentData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 // export
 module.exports = router;
