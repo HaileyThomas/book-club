@@ -41,10 +41,7 @@ Are you interested to find out the trending books? Do you want to exchange comme
 
 ## 🖼️ Wireframe
 
-- <img src="public/assets/mockup1.png" width="300">
- <img src="public/assets/mockup2.png" width="300">
- <img src="public/assets/mockup3.png" width="300">
- <img src="public/assets/mockup4.png" width="300">
+<img src="public/assets/mockup1.png" width="300"> <img src="public/assets/mockup2.png" width="300"> <img src="public/assets/mockup3.png" width="300"> <img src="public/assets/mockup4.png" width="300">
 
 ## 💾 Installation
 
