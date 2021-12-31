@@ -1,14 +1,6 @@
 <h1 align="center">Interactive Full-Stack Project: Book Club</h1>
   
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/jpd61/e-commerce-backend" />
-    <img src="https://img.shields.io/github/languages/top/jpd61/e-commerce-backend"  />
-    <img src="https://img.shields.io/github/issues/jpd61/e-commerce-backend" />
-    <img src="https://img.shields.io/github/last-commit/jpd61/e-commerce-backend" >
-    <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/jpd61?style=social" target="_blank" /></a>
-</p>
-  
-<p align="center">
     <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/Sequelize-blue"  />
     <img src="https://img.shields.io/badge/mySQL-blue"  />
@@ -21,19 +13,21 @@ Are you interested to find out the trending books? Do you want to exchange comme
 
 ✋ [GitHub Repository](https://github.com/HaileyThomas/book-club/)
 
-✋ [Deployed Application URL](https://HaileyThomas.github.io/book-club/)
+✋ [Deployed Application URL](https://book-club123.herokuapp.com/)
 
 
 ## Table of Contents
 
 - [Data Model](#data-model)
+- [Wireframe](#wireframe)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Purpose](#purpose)
-- [Acceptance Criteria](#acceptance-criteria)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Contributing](#contributing)
 - [Issues](#issues)
+- [Development](#development)
 - [Tests](#tests)
 - [Links](#links)
 - [Questions](#questions)
@@ -43,6 +37,13 @@ Are you interested to find out the trending books? Do you want to exchange comme
 <h1 align="center">
         <img src="public/assets/data.png" alt="Data Model" title="Data Model Image" width="600" height="300">
 </h1>
+
+## 🖼️ Wireframe
+
+- <img src="public/assets/wireframe1.png">
+ <img src="public/assets/wireframe2.png">
+ <img src="public/assets/wireframe3.png">
+ <img src="public/assets/wireframe4.png">
 
 ## 💾 Installation
 
@@ -77,9 +78,11 @@ I WANT to be able to find new books to read and have a place to discuss them wit
 
 SO THAT i can expose myself to new books and different perspectives.`
 
-## ✋ Acceptance Criteria
+## 📷 Screenshots
 
-  ` placeholder text`
+- <img src="public/assets/screenshot1.png" width="600">
+- <img src="public/assets/screenshot2.png" width="600">
+- <img src="public/assets/screenshot3.png" width="600">
 
 ## ✏️ License
 
@@ -96,17 +99,19 @@ SO THAT i can expose myself to new books and different perspectives.`
 
 ## 🔍 Issues
 
-  None at this time
+No issues at this time.
+
+## ⚙️ Development
+
+- In the future we would like to finish developing the "reply" feature to comments.
 
 ## ✏️ Testing
 
-[placeholder text]
+No testing at this time.
 
 ## 🔍 Links
 
-- [Video Demo or just a recording](https://youtu.be/)
-
-- [This app is deployed on Heroku (click here to see app)](https://dashboard.heroku.com/apps)
+- [This app is deployed on Heroku (click here to see app)](https://book-club123.herokuapp.com/)
 
 
 ## ❓ Questions
